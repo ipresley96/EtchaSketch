@@ -5,8 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>This works</h1>
+    <section class="info">
+        <h1>Etch a Sketch</h1>
+        <div class="btns">
+            <a href="#" class="reset"></a>
+        </div>
+    </section>
+    <section class="game_contianer">
+        <section class="grid"></section>
+        <section class="btns">
+            <button onclick="changeColor('black')">Black</button>
+            <button onclick="changeColor('random')">Random</button>
+            <button onclick="changeColor('white')">Eraser</button>
+            <button>Reset</button>
+        </section>
+    </section>
+    <section>
+        <input type="text" placeholder="Size of Board" value="16" onchange=" changeSize((this.value))" />
+        <button> Set Size</button>
+    </section>
+    <script src="main.js"></script>
 </body>
 </html>
