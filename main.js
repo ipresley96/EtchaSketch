@@ -26,11 +26,7 @@ function makeGrid(size){
 makeGrid(16)
 // logic t0 change to size of the grid 
 function changeSize(input){
-    if(input <= 100 &&  input >= 2){
-        makeGrid(input);
-    } else {
-        console.log("not valid")
-    }
+    return input <= 100 &&  input >= 2 ? makeGrid(input) : console.log("not valid"):
 }
 
 
